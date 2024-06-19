@@ -21,6 +21,9 @@ const FooterBanner = ( {footerBanner} ) => {
           <button type='button'>{footerBanner.buttonText}</button>
           </Link>
         </div>
+        <img
+        src={urlFor(footerBanner.image)}
+        className='footer-banner-image' />
       </div>
     </div>
   )
