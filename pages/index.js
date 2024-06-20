@@ -6,7 +6,6 @@ const Home = ({ products, bannerData }) => {
   return (
     <>
     <HeroBanner heroBannner={bannerData[0]}/>
-    {console.log(bannerData[0])}
 
     <div className='products-heading'>
       <h2>Best selling prodct</h2>
@@ -22,13 +21,9 @@ const Home = ({ products, bannerData }) => {
 
     <FooterBanner footerBanner={bannerData[0]} />
 
-    <Footer />
-
     </>
   ) 
 }
-
-export default Home
 
 
 export const getServerSideProps = async () => {
@@ -43,3 +38,5 @@ export const getServerSideProps = async () => {
     props: { products, bannerData }
   }
 }
+
+export default Home
